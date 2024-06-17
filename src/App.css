@@ -1,0 +1,159 @@
+/* src/App.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.balance {
+  margin: 20px 0;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-left: 5px solid;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.list li.minus {
+  border-color: #c0392b;
+}
+
+.list li.plus {
+  border-color: #27ae60;
+}
+
+.list li:hover {
+  background-color: #e2e2e2;
+}
+
+.delete-btn {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.form-control {
+  margin: 10px 0;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #217dbb;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 85%;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 10px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 95%;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 7px;
+  }
+
+  .list li {
+    font-size: 0.9rem;
+  }
+}
+
+.img1 {
+  width: 10%;
+  height: 10%;
+  border: none;
+  border-radius: 25px;
+  background-color: transparent;
+
+}
